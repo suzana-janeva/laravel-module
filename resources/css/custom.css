@@ -1,0 +1,8 @@
+body {
+    background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+}
+
+header, footer {
+    background-color: #7c3aed; /* Tailwind's bg-purple-600 */
+    color: white;
+}
