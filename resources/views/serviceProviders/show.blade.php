@@ -9,7 +9,7 @@
 
             <div class="bg-white p-6 shadow-md rounded-lg mb-6">
                 <div class="flex">
-                    <img src="{{ $serviceProvider->logo }}" alt="{{ $serviceProvider->name }} Logo" class="w-32 h-32 object-cover rounded-full mr-6">
+                    <img src="{{ $serviceProvider->logo }}" alt="{{ $serviceProvider->name }} logo" class="w-32 h-32 object-cover rounded-full mr-6" loading="lazy">
                     <div>
                         <h2 class="text-2xl font-semibold">{{ $serviceProvider->name }}</h2>
                         <p class="text-gray-600">{{ $serviceProvider->short_description }}</p>
