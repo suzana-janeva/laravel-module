@@ -60,7 +60,7 @@ Run the tests using the following command:
 
 ### Screenshots
 
-- **List of all service providers**:
-- **Service provider profile page**:
-- **Telescope dashboard**:
-- **Lighthouse report**:
+- **List of all service providers**: [https://laravel-module.suzanajaneva.com/service-providers]
+- **Service provider profile page**: [https://laravel-module.suzanajaneva.com/service-providers/9]
+- **Telescope dashboard**: [https://laravel-module.suzanajaneva.com/telescope]
+- **Lighthouse report**: [https://laravel-module.suzanajaneva.com/screenshots/report.jpg]
