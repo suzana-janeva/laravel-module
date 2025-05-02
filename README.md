@@ -1,45 +1,47 @@
 # Service Provider Directory
 
-A Laravel-based web application for service providers by category. Built with including eager loading, Vite, Tailwind CSS
+A web application for service providers by category. Built with including eager loading, vite, tailwind CSS
 
 ##  Setup Instructions
 
 ### 1. Install dependencies
 
-`composer install`
-`npm install`
+- `composer install`
+- `npm install`
 
 ### 2. Setup environment
-`cp .env.example .env`
-`DB_CONNECTION=mysql`
-`DB_DATABASE=laravel_module`
-`DB_USERNAME=username`
-`DB_PASSWORD=password`
+Edit the `.env` file with your database credentials:
 
+- `DB_CONNECTION=mysql`
+- `DB_DATABASE=laravel_module`
+- `DB_USERNAME=username`
+- `DB_PASSWORD=password`
 
 ### 3.Database setup
-`php artisan migrate`
-`php artisan db:seed`
+
+- `php artisan migrate`
+- `php artisan db:seed`
 
 ### 4.Build assets
-`npm run dev - for development`
-`npm run build  - for production`
+
+- `npm run dev - for development`
+- `npm run build  - for production`
 
 ### 5.Testing
-`cp .env .env.testing`
-Add this in `.env.testing`
-`APP_ENV=testing`
-`DB_DATABASE=databse_test`
+For testing, make sure your `.env.testing` file contains the following environment variables:
 
-Run the tests with
-`php artisan test`
+- `APP_ENV=testing`
+- `DB_DATABASE=databse_test`
+
+Run the tests using the following command: 
+- `php artisan test`
 
 ## Design Decisions
 
-- The application is built using Laravel 12
-- Tailwind CSS is used for styling
-- Vite is used for asset management
-- Eloquent relationships are used to associate `ServiceProvider` with `Category`
+- Built with **Laravel 12**
+- Styling with **Tailwind CSS**
+- Asset management with **Vite**
+- Uses **Eloquent relationships** to associate `ServiceProvider` with `Category`
 
 ## Performance Optimizations
 
@@ -50,12 +52,15 @@ Run the tests with
 
 ### Areas for future enhancement 
 - **Pagination**: Add pagination to the service provider list when dealing with a large number of records
-- **Image Upload & Optimization**: Implement image upload functionality with thumbnail to improve performance
-- **CRUD for Service Providers**: Add store, update and delete methods for service providers instead of using factories
+- **Image upload & optimization**: Implement image upload functionality with thumbnail to improve performance
+- **CRUD for service providers**: Add store, update and delete methods for service providers instead of using factories
 - **Category CRUD**: Add full CRUD functionality for `Category` instead of using seeders
-- **Test Coverage**: Implement tests for all functionalities
+- **Test coverage**: Implement tests for all functionalities
+- **Telescope**: Enable in non-local environments if needed for broader monitoring
 
 ### Screenshots
 
 - **List of all service providers**:
 - **Service provider profile page**:
+- **Telescope dashboard**:
+- **Lighthouse report**:
