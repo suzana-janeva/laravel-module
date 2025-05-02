@@ -7,7 +7,8 @@
     
     <!-- Category filter -->
     <form action="{{ url('/service-providers') }}" method="GET" class="mb-4">
-        <select name="category" class="p-2 border rounded bg-white">
+    <label for="category">Select a category</label>
+        <select id="category" name="category" class="p-2 border rounded bg-white">
             <option value="">Select a category</option>
             @foreach($categories as $category)
                 <option value="{{ $category->id }}" {{ request('category') == $category->id ? 'selected' : '' }}>
@@ -23,7 +24,7 @@
         @foreach($serviceProviders as $provider)
             <li class="p-4 bg-white shadow-md rounded">
                 <a href="{{ url('/service-providers/' . $provider->id) }}" class="text-xl text-blue-600 hover:underline">
-                    <img src="{{ $provider->logo }}" alt="Logo" class="w-16 h-16 inline-block mr-4" loading="lazy">
+                    <img src="{{ $provider->logo }}" alt="{{ $provider->name }} Logo" class="w-16 h-16 inline-block mr-4" loading="lazy">
                     <strong>{{ $provider->name }}</strong> - {{ $provider->category->name }}
                 </a>
                 <p class="mt-2">{{ $provider->short_description }}</p>
