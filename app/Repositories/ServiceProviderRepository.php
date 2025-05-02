@@ -2,11 +2,10 @@
 
 namespace App\Repositories;
 
-use App\Interfaces\ServiceProviderInterface;
 use Illuminate\Database\Eloquent\Collection;
 use App\Models\ServiceProvider;
 
-class ServiceProviderRepository implements ServiceProviderInterface
+class ServiceProviderRepository implements ServiceProviderRepositoryInterface
 {
     public function getAllServiceProviders($categoryId = null): Collection
     {

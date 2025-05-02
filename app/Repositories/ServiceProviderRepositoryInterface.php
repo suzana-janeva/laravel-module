@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Interfaces;
+namespace App\Repositories;
 
-interface ServiceProviderInterface
+interface ServiceProviderRepositoryInterface
 {
     public function getAllServiceProviders($categoryId = null);
     public function getServiceProviderById($id);

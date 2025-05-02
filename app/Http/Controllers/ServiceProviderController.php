@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Interfaces\ServiceProviderInterface;
+use App\Repositories\ServiceProviderRepositoryInterface;
 use App\Models\ServiceProvider;
 use Illuminate\Http\Request;
 use App\Models\Category;
@@ -11,7 +11,7 @@ class ServiceProviderController extends Controller
 {
     protected $serviceProvider;
     
-    public function __construct(ServiceProviderInterface $serviceProvider)
+    public function __construct(ServiceProviderRepositoryInterface $serviceProvider)
     {
         $this->serviceProvider = $serviceProvider;
     }

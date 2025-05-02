@@ -31,7 +31,7 @@ Edit the `.env` file with your database credentials:
 For testing, make sure your `.env.testing` file contains the following environment variables:
 
 - `APP_ENV=testing`
-- `DB_DATABASE=databse_test`
+- `DB_DATABASE=database_test`
 
 Run the tests using the following command: 
 - `php artisan test`
